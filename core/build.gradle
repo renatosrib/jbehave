@@ -1,0 +1,13 @@
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.4.7'
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.assertj:assertj-core:1.7.0'
+    testCompile 'org.jbehave:jbehave-core:3.9.5'
+    testCompile 'org.jbehave.site:jbehave-site-resources:3.1.1:@zip'
+}
+
+sourceSets.test.resources.srcDir 'src/test/groovy'
