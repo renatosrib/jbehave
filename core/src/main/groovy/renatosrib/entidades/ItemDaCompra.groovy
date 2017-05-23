@@ -5,5 +5,5 @@ package renatosrib.entidades
  */
 class ItemDaCompra {
     Produto produto
-    Integer quantidade
+    BigDecimal quantidade
 }

@@ -13,22 +13,21 @@ class CompraDeProdutosSteps {
     Produto produto
     Compra compra
 
-    @Given("é vendido $produto por $preco cada")
+    @Given('é vendido $produto por $preco')
     public void defineProduto(String produto, String preco) {
         this.produto = new Produto(nome: produto, preco: new BigDecimal(preco));
     }
 
-    @When("eu compro $quantidade chocolates")
-    public void comproProduto(Integer quantidade) {
+    @When('compro $quantidade')
+    public void comproProduto(BigDecimal quantidade) {
         ItemDaCompra itemDaCompra = new ItemDaCompra(produto: produto, quantidade: quantidade);
         this.compra = new Compra();
         this.compra.adicionarItem(itemDaCompra);
     }
 
-    @Then("o subtotal deve ser $subTotal")
+    @Then('o subtotal deve ser $subTotal reais')
     public void calculoSubtotal(BigDecimal subTotal) {
         assertEquals(compra.subTotal(), subTotal, 0);
     }
-
 
 }

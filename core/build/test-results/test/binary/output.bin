@@ -1,0 +1,25 @@
+ Processing system properties {}
+�Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=300,failOnStoryTimeout=false,threads=1]
+
+(BeforeStories)
+
+2Running story renatosrib/compra_de_produtos.story
+
+&(renatosrib/compra_de_produtos.story)
+Scenario: 
+(Dado que é vendido chocolates por 5.00
+Quando compro 2
+'Então o subtotal deve ser 10.00 reais
+%Dado que é vendido limões por 7.00
+Quando compro 1.5
+'Então o subtotal deve ser 10.50 reais
+/Dado que é vendido uma duzia de ovos por 7.00
+Quando compro 1
+#Então o subtotal deve ser 7 reais
+
+
+
+(AfterStories)
+
+�Generating reports view to '/home/rsr/projetos/outros/jbehave/core/build/jbehave' using formats '[console, html, txt]' and view properties '{navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, reports=ftl/jbehave-reports-with-totals.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, decorated=ftl/jbehave-report-decorated.ftl, maps=ftl/jbehave-maps.ftl}'
+gReports view generated with 0 stories (of which 0 pending) containing 0 scenarios (of which 0 pending)

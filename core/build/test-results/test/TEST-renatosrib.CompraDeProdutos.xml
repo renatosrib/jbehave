@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="renatosrib.CompraDeProdutos" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-05-23T19:10:45" hostname="ca161.synchro.com.br" time="5.366">
+  <properties/>
+  <testcase name="run" classname="renatosrib.CompraDeProdutos" time="5.366"/>
+  <system-out><![CDATA[Processing system properties {}
+Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=false,verboseFiltering=false,storyTimeoutInSecs=300,failOnStoryTimeout=false,threads=1]
+
+(BeforeStories)
+
+Running story renatosrib/compra_de_produtos.story
+
+(renatosrib/compra_de_produtos.story)
+Scenario: 
+Dado que é vendido chocolates por 5.00
+Quando compro 2
+Então o subtotal deve ser 10.00 reais
+Dado que é vendido limões por 7.00
+Quando compro 1.5
+Então o subtotal deve ser 10.50 reais
+Dado que é vendido uma duzia de ovos por 7.00
+Quando compro 1
+Então o subtotal deve ser 7 reais
+
+
+
+(AfterStories)
+
+Generating reports view to '/home/rsr/projetos/outros/jbehave/core/build/jbehave' using formats '[console, html, txt]' and view properties '{navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, reports=ftl/jbehave-reports-with-totals.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, decorated=ftl/jbehave-report-decorated.ftl, maps=ftl/jbehave-maps.ftl}'
+Reports view generated with 0 stories (of which 0 pending) containing 0 scenarios (of which 0 pending)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
